@@ -38,10 +38,10 @@ def hbnb():
     cache_id = uuid.uuid4()
     
     # Pass cache_id to the template
-    return render_template('0-hbnb.html',cache_id,
+    return render_template('0-hbnb.html',
                            states=st_ct,
                            amenities=amenities,
-                           places=places,cache_id=uuid.uuid4())
+                           places=places,cache_id=cache_id)
 
 
 if __name__ == "__main__":
